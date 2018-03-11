@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="google-signin-client_id" content="370109529874-1vgijt3o22ib43vhbv0or79igcl4u4h1.apps.googleusercontent.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Google Oauth</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="signin.js"></script>
+
+</head>
+<body>
+	<div id="log">
+		<h2 align="center"><u>Signin with Google</u></h2>
+		<br><br>
+		<div class="g-signin2" align="center" data-onsuccess="onSignIn"></div>
+	</div>
+	<div id="data" align="center">
+		<img id="pic">
+		<h3>Accout Info</h3>
+		<h4 id="username"></h4>
+		<h4 id="email"></h4>
+		<button id="btn" onclick="signOut()">Logout</button>
+	</div>
+</body>
+</html>
